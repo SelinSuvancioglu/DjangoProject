@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
 # Create your views here.
+def index(request):
+    return render(request, 'index.html')
+
+# contact fonksiyonunu geçici olarak boş bırakabiliriz veya kaldırabiliriz
+# def contact(request):
+#     return render(request, 'contact.html')
