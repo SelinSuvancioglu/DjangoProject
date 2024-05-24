@@ -42,40 +42,66 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="{% url 'contact_form' %}" method="post" role="form" class="php-email-form">
-                {% csrf_token %}
-                      <div class="row">
-                        <div class="form-group col-md-6">
-                          <label for="name">Your Name</label>
-                          <input type="text" name="name" class="form-control" id="name" required>
+                    <form action="{% url 'contact_form' %}" method="post" role="form" id="şablon">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Email</label>
+                                <input type="email" class="form-control" name="email" id="email" required>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                          <label for="name">Your Email</label>
-                          <input type="email" class="form-control" name="email" id="email" required>
+                        <div class="form-group">
+                            <label for="name">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" required>
                         </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="name">Subject</label>
-                        <input type="text" class="form-control" name="subject" id="subject" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="name">Message</label>
-                        <textarea class="form-control" name="message" rows="10" required></textarea>
-                      </div>
-                      <div class="my-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                      </div>
-                      <div class="text-center"><button type="submit">Send Message</button></div>
+                        <div class="form-group">
+                            <label for="name">Message</label>
+                            <textarea class="form-control" name="message" rows="10" required></textarea>
+                        </div>
+                        <div class="my-3">
+
+                            <div class="error-message"></div>
+
+                        </div>
+                        <!-- Modal -->
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Your message has been sent. Thank you!</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button id="buton" type="submit">Send Message</button>
+                        </div>
                     </form>
-                  </div>
+          </div>
 
         </div>
 
       </div>
-
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
+<style>
+    #şablon {
+        width: 100%;
+        padding: 30px;
+        background: #fff;
+        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    #buton {
+        background: #149ddd;
+        border: 0;
+        padding: 10px 24px;
+        color: #fff;
+        transition: 0.4s;
+        border-radius: 4px;
+    }
+</style>
 {% endblock %}

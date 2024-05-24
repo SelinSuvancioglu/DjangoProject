@@ -63,6 +63,8 @@ def index(request):
     return render(request, 'index.html', context=context)
 
 
+
+
 def redirect_urls(request, slug):
     doc = get_object_or_404(Document, slug=slug),
     return redirect(doc.File.url)
