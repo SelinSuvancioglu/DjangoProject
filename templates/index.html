@@ -4,8 +4,8 @@
 <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Selin Suvancıoğlu</h1>
-      <p>I'm <span class="typed" data-typed-items="Junior Game Developer, Information Systems Engineer"></span></p>
+      <h1>{{ site_title}}</h1>
+      <p>I'm <span class="typed" data-typed-items='Junior Game Developer, Information Systems Engineer'></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -18,9 +18,7 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>
-              I am a 4th year student in Information Systems Engineering. During my university years, I took cyber security, computer networks, object-oriented programming, software quality assurance and web programming courses. I develop games and web projects.
-          </p>
+          <p>{{ about_text }}</p>
         </div>
 
         <div class="row">
@@ -35,16 +33,16 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>25 May 2001</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+90 534 522 3392</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bandırma, Türkiye</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>{{ about_birthday }}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>{{ about_phone }}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>{{ about_city }}</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Junior</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>suvanciogluselin@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{{ about_age }}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>{{ about_degree }}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>{{ about_email }}</span></li>
                 </ul>
               </div>
             </div>
@@ -61,9 +59,7 @@
 
         <div class="section-title">
           <h2>Facts</h2>
-          <p>
-            In my first internship, I developed a hyper causal game. As his graduation project, he is developing a 2D platformer game. I have also developed 2 Web projects as term projects.
-          </p>
+          <p>{{ facts_text }}</p>
         </div>
 
         <div class="row justify-content-center">
@@ -71,10 +67,8 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
             <div class="count-box text-center">
               <i class="bi bi-controller"></i>
-              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end={{ facts_game_project }} data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Game Projects</strong></p>
-                <p>1 2d Platformer Game</p>
-                <p>1 Hyper Causal Game</p>
             </div>
           </div>
 
@@ -83,8 +77,6 @@
               <i class="bi bi-code-slash"></i>
               <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Web Projects</strong></p>
-                <p>1 Frontend Project</p>
-                <p>1 Full Stack Project</p>
             </div>
           </div>
 
@@ -99,61 +91,20 @@
 
         <div class="section-title">
           <h2>Skills</h2>
-          <p>
-             My experiences and areas of expertise are as follows. I am constantly improving myself and trying to acquire new skills.
-          </p>
+          <p>{{ skills_text }}</p>
         </div>
 
-        <div class="row skills-content">
+        <div class="row skills-content justify-content-center">
 
           <div class="col-lg-6" data-aos="fade-up">
-
+              {% for skill in skills %}
             <div class="progress">
-              <span class="skill">HTML <i class="val">50%</i></span>
+              <span class="skill">{{ skill.name }}<i class="val">{{ skill.percentage }}</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="{{ skill.percentage }}" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">20%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Unity <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
+              {% endfor %}
           </div>
 
         </div>
@@ -162,76 +113,76 @@
     </section><!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <section id="education" class="resume ">
       <div class="container">
 
         <div class="section-title">
-          <h2>Resume</h2>
+          <h2>Education</h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Selin Suvancıoğlu</h4>
-              <p><em>I am interested game development and IT.</em></p>
-              <ul>
-                <li>Bandırma, Balıkesir, Türkiye</li>
-                <li>+905345223392</li>
-                <li>suvanciogluselin@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
+          <div class="row">
+              {% for education in educations %}
             <div class="resume-item">
-              <h4>Şehit Mehmet Günenç High School</h4>
-              <h5>2015 - 2019</h5>
-              <p><em>Bandırma, Balıkesir, Türkiye</em></p>
+              <h4>{{ education.School }}</h4>
+              <h5>{{ education.StartDate|date:"Y" }} -
+                  {% if education.EndDate %}
+                    {{ education.EndDate|date:"Y" }}
+                  {% else %}
+                    Present
+                  {% endif %}</h5>
+              <p><em>{{ education.Degree }}, {{ education.Department }}</em></p>
                 <ul>
-                <li>I finished school with third place.</li>
+                <li><strong>GPA:</strong> <span>{{ education.GNO }}</span></li>
                 </ul>
             </div>
-            <div class="resume-item">
-              <h4>Piri Reis University</h4>
-              <h5>2019 - 2024</h5>
-              <p><em>Bachelor's degree, Information systems engineering</em></p>
-              <ul>
-                <li>My GNO is 2.97</li>
-                <li>I studied AI, cybersecurity, computer networks, algorithms, software quality assurance, mobile programming</li>
-              </ul>
-            </div>
+              {% endfor %}
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Game developer intern</h4>
-              <h5>07.01.2022 - 01.08.2022 </h5>
-              <p><em>Hoody Studios, Istanbul, Türkiye </em></p>
-              <ul>
-                <li>I developed Hyper Casual game. This game involves collecting cubes and delivering them to the finish point, while paying attention to the obstacles on the road.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>IT intern</h4>
-              <h5>21.08.2023 - 21.09.2023</h5>
-              <p><em>Nursan, Istanbul, Türkiye</em></p>
-              <ul>
-                <li>I worked on network technologies and server architectures.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section><!-- End Resume Section -->
+
+      <!-- ======= Experience Section ======= -->
+    <section id="experience" class="resume ">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Experience</h2>
+        </div>
+
+          <div class="row">
+
+           <div class="row skills-content justify-content-center-lg-6" data-aos="fade-up" data-aos-delay="100">
+               {% for experience in experiences %}
+            <div class="resume-item">
+              <h4>{{ experience.JobTitle }}</h4>
+                <h5>
+                  {{ experience.StartDate|date:"M Y" }} -
+                  {% if experience.EndDate %}
+                    {{ experience.EndDate|date:"M Y" }}
+                  {% else %}
+                    Present
+                  {% endif %}
+                </h5>
+
+              <p><em>{{ experience.Company }} , {{ experience.Location }}</em></p>
+              <ul>
+                <li>{{ experience.JobDetail }}</li>
+              </ul>
+            </div>
+               {% endfor %}
+          </div>
+
+        </div>
+            <br>
+      </div>
+    </section><!-- End Experience Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>In this section, I share with you some of his past projects. Here you can see our work in design and development and take a look at the details.</p>
+          <h2>Projects</h2>
+          <p>{{ portfolio_text }}</p>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -246,28 +197,29 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-game">
-            <div class="portfolio-wrap">
-              <img src="media/img/portfolio/Game-2.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+                    <div class="card">
+                      <img src="media/img/portfolio/Game-2.png" alt="Project Photo" style="width:100%">
+                      <h3>Hyper Causual Game</h3>
+                      <p>Developed using Unity and C#</p>
+                        <br>
+                      <p><button onclick="window.location.href='https://github.com/SelinSuvancioglu/Cube-Surrfer-Clone-Scripts'">View from Github</button></p>
+                    </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="media/img/portfolio/Web-1.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="https://github.com/SelinSuvancioglu/Web-Project.git" title="Project Files"><i class="bx bx-code"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="card">
+                      <img src="media/img/portfolio/Web-1.png"  class="img-fluid" alt="Project Photo" style="width:100%">
+                      <h3>Yacht Booking Site</h3>
+                      <p>Front end project</p>
+                        <br>
+                      <p><button onclick="window.location.href='https://github.com/SelinSuvancioglu/Web-Project/tree/main/GunBatimi'">View from Github</button></p>
+                    </div>
           </div>
-            
+
 
         </div>
-
+        <br> <br> <br> <br> <br> <br>
       </div>
     </section><!-- End Portfolio Section -->
 
