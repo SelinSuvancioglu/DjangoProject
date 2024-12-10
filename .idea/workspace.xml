@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e7b4475-a8ca-4ab7-9c33-d9d07c1986ea" name="Changes" comment="Final-2">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="2e7b4475-a8ca-4ab7-9c33-d9d07c1986ea" name="Changes" comment="Final-3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,7 +211,7 @@
       <workItem from="1716507019109" duration="1555000" />
       <workItem from="1716529994852" duration="8601000" />
       <workItem from="1716541085756" duration="4961000" />
-      <workItem from="1733832306679" duration="588000" />
+      <workItem from="1733832306679" duration="718000" />
     </task>
     <task id="LOCAL-00001" summary="Dosyalar gönderildi">
       <option name="closed" value="true" />
@@ -320,7 +317,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716545377603</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Final-3">
+      <option name="closed" value="true" />
+      <created>1733832925044</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1733832925044</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Final-3">
+      <option name="closed" value="true" />
+      <created>1733832980159</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1733832980160</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +357,7 @@
     <MESSAGE value="Bootstrap eklendi" />
     <MESSAGE value="Final" />
     <MESSAGE value="Final-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final-2" />
+    <MESSAGE value="Final-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final-3" />
   </component>
 </project>
