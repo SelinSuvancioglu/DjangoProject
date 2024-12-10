@@ -1,0 +1,27 @@
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="../../media/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="#">Selin Suvancıoğlu</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/SelinSuvancioglu" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/selin-suvanc%C4%B1o%C4%9Flu-376164268/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+    <nav id="navbar" class="nav-menu navbar">
+        <ul>
+            <li><a href="{% url 'index' %}#hero" class="nav-link {% if request.resolver_match.url_name == "index" %}active{% endif %}"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="{% url 'index' %}#about" class="nav-link scrollto {% if '/#about' in request.get_full_path %}active{% endif %}"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="{% url 'index' %}#education" class="nav-link scrollto {% if '/#education' in request.get_full_path %}active{% endif %}"><i class="bx bxs-graduation"></i> <span>Education</span></a></li>
+            <li><a href="{% url 'index' %}#experience" class="nav-link scrollto {% if '/#experience' in request.get_full_path %}active{% endif %}"><i class="bx bx-briefcase"></i> <span>Experience</span></a></li>
+            <li><a href="{% url 'index' %}#portfolio" class="nav-link scrollto {% if '/#portfolio' in request.get_full_path %}active{% endif %}"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+            <li><a href="{% url 'contact' %}" class="nav-link {% if '/contact/' in request.get_full_path %}active{% endif %}"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+    </nav>
+
+
+    </div>
+  </header><!-- End Header -->
