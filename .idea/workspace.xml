@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e7b4475-a8ca-4ab7-9c33-d9d07c1986ea" name="Changes" comment="Final-3" />
+    <list default="true" id="2e7b4475-a8ca-4ab7-9c33-d9d07c1986ea" name="Changes" comment="Final-4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,6 +218,8 @@
       <workItem from="1733832306679" duration="817000" />
       <workItem from="1733833299950" duration="242000" />
       <workItem from="1733833714904" duration="36000" />
+      <workItem from="1736324879716" duration="317000" />
+      <workItem from="1736325224628" duration="94000" />
     </task>
     <task id="LOCAL-00001" summary="Dosyalar gönderildi">
       <option name="closed" value="true" />
@@ -359,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733833735477</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Final-4">
+      <option name="closed" value="true" />
+      <created>1736325179950</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1736325179950</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +398,7 @@
     <MESSAGE value="Final" />
     <MESSAGE value="Final-2" />
     <MESSAGE value="Final-3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final-3" />
+    <MESSAGE value="Final-4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final-4" />
   </component>
 </project>
